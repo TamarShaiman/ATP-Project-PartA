@@ -72,7 +72,7 @@ public class MyMazeGenerator  extends AMazeGenerator {
         }
         if (gridTable.length % 2 == 0){
             Position pos = new Position(gridTable.length-1, 0);
-            wallsList.remove(pos);
+            wallsList.remove(pos); 
         }
         return listOfCellsSet;
     }
