@@ -1,6 +1,9 @@
-package algorithms.mazeGenerators;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
-import java.util.Arrays;
+package algorithms.mazeGenerators;
 
 public class Maze {
     private int rowNum;
@@ -20,8 +23,16 @@ public class Maze {
     public Maze() {
     }
 
-    public void print(){
-        System.out.println(Arrays.deepToString(mazeTable));
+    public void print() {
+        for(int i = 0; i < this.rowNum; ++i) {
+            for(int j = 0; j < this.colNum; ++j) {
+                System.out.print(this.mazeTable[i][j]);
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+
     }
 
     public Position getStartPosition() {
@@ -53,11 +64,10 @@ public class Maze {
     }
 
     public int getRowNum() {
-        return rowNum;
+        return this.rowNum;
     }
 
     public int getColNum() {
-        return colNum;
+        return this.colNum;
     }
-
 }
